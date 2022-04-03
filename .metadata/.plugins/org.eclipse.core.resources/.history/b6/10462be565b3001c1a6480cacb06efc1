@@ -1,0 +1,10 @@
+package d1;
+
+public class positionalNumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

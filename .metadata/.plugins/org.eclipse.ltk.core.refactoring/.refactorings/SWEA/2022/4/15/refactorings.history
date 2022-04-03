@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;d1.medianFind&apos; to &apos;findMedian&apos;&#x0D;&#x0A;- Original project: &apos;SWEA&apos;&#x0D;&#x0A;- Original element: &apos;d1.medianFind&apos;&#x0D;&#x0A;- Renamed element: &apos;d1.findMedian&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;medianFind&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;d1{medianFind.java[medianFind" matchStrategy="1" name="findMedian" qualified="false" references="true" similarDeclarations="false" stamp="1649000485532" textual="false" version="1.0"/>
+</session>

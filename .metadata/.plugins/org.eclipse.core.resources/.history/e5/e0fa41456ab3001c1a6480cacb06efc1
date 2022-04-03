@@ -1,0 +1,10 @@
+package d1;
+
+public class stamp {  // 2046.스탬프 찍기
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
