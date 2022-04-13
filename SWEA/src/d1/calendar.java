@@ -10,6 +10,7 @@ public class calendar {  // 2056.연월일 달력
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		int T = Integer.parseInt(br.readLine());
+		int[] lastday = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 		
 		for (int t = 1; t <= T; t++) {
 			String date = br.readLine();
@@ -22,27 +23,11 @@ public class calendar {  // 2056.연월일 달력
 			int imonth = Integer.parseInt(month);
 			int iday = Integer.parseInt(day);
 			
-			if(imonth < 1 || 12 < imonth) {
+			if(imonth < 1 || 12 < imonth || iday < 1 || lastday[imonth-1] < iday) {
 				System.out.println("#" + t + " " + -1);
-				continue;
-			}else if(imonth == 2){
-				if(iday < 1 || 28 < iday) {
-					System.out.println("#" + t + " " + -1);
-					continue;
-				}
-			}else if(imonth == 1 || imonth == 3 || imonth == 5 || imonth == 7 || imonth == 8 || imonth == 10 || imonth == 12){
-				if(iday < 1 || 31 < iday) {
-					System.out.println("#" + t + " " + -1);
-					continue;
-				}
 			}else {
-				if(iday < 1 || 30 < iday) {
-					System.out.println("#" + t + " " + -1);
-					continue;
-				}
+				System.out.println("#" + t + " " + year + "/" + month + "/" + day);
 			}
-			
-			System.out.println("#" + t + " " + year + "/" + month + "/" + day);
 		}
 	}
 
